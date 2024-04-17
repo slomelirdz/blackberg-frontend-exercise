@@ -1,0 +1,38 @@
+/*
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+* * * * * ==============================
+========================================
+========================================
+========================================
+----------------------------------------
+USWDS THEME CUSTOM STYLES
+----------------------------------------
+!! Copy this file to your project's
+   sass root. Don't edit the version
+   in node_modules.
+----------------------------------------
+Custom project SASS goes here.
+
+i.e.
+@include u-padding-right('05');
+----------------------------------------
+*/
+
+@use "uswds-core" as *;
+
+// Custom USWDS theme styles
+// Banner
+.usa-banner__header {
+   padding-bottom: .5rem;
+   padding-top: .5rem;
+}
+
+// Header
+@media (min-width: 64em) {
+   .usa-header+.usa-section,
+   .usa-header+main {
+      border-top: none;
+   }
+}

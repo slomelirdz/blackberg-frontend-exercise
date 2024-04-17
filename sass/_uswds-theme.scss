@@ -1,0 +1,32 @@
+/*
+----------------------------------------
+USWDS with settings overrides
+----------------------------------------
+Uncomment the following lines and add a list of changed settings
+in the form $setting: value,
+----------------------------------------
+*/
+
+// Theme customization settings
+@use "uswds-core" with ( 
+    // General
+    $theme-image-path: '../uswds/img',
+    $theme-show-compile-warnings: true,
+    $theme-show-notifications: false,
+
+    // Spacing
+    $theme-grid-container-max-width: 'widescreen',
+
+    // Color
+    $theme-color-primary: 'blue-warm-60v',
+
+    // Banner
+    $theme-banner-max-width: 'widescreen',
+
+    // Header
+    $theme-header-logo-text-width: 50%,
+    $theme-header-max-width: 'widescreen',
+
+    // Footer
+    $theme-footer-max-width: 'widescreen',
+);
