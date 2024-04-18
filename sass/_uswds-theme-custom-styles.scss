@@ -31,8 +31,13 @@ i.e.
 
 // Header
 @media (min-width: 64em) {
+
    .usa-header+.usa-section,
    .usa-header+main {
       border-top: none;
+   }
+
+   .usa-nav__primary-item>.usa-current {
+      color: color('blue-warm-60v');
    }
 }

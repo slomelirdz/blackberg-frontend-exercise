@@ -13,8 +13,8 @@
     <section class="usa-banner" aria-label="Official website of the United States government">
         <div class="usa-accordion">
             <header class="usa-banner__header">
-                <div class="usa-banner__inner">
-                    <div class="grid-col-auto">
+                <div class="usa-banner__inner flex-align-stretch">
+                    <div class="grid-col-auto display-flex flex-rox flex-align-center">
                         <img aria-hidden="true" class="usa-banner__header-flag"
                             src="/assets/uswds/img/us_flag_small.png" alt="" />
                     </div>
@@ -109,47 +109,148 @@
     </header>
 
     <!-- Main Content -->
-    <main id="main-content">
-        <section class="grid-container usa-hero" aria-label="Introduction">
-            <div class="grid-row">
+    <main id="main-content" role="main">
+        <!-- Hero -->
+        <section class="hero" aria-label="Introduction">
+            <div class="hero__container grid-container">
+                <div class="hero__inner grid-row grid-gap padding-y-2 tablet:padding-y-6 desktop:padding-y-10">
+                    <div
+                        class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
+                        <div class="hero__text padding-bottom-3 tablet:padding-right-4 desktop:padding-x-4">
+                            <h1 class="hero__heading line-height-sans-3 tablet:line-height-sans-4">
+                                Transforming Healthcare through
+                                <span class="text-primary-vivid">Innovation</span> and
+                                <span class="text-primary-vivid">Advanced Manufacturing</span>
+                            </h1>
+                            <p class="hero__subheading line-height-sans-5 font-sans-md">
+                                The VHA Office of Advanced Manufacturing envisions a future where eligible
+                                Veterans receive personalized, safe, and equitable care through cutting-edge
+                                manufacturing capabilities.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
+                        <div class="hero__image padding-right-4">
+                            <img class="image image__backwards" src="assets/images/home/3d-printing.png" srcset="assets/images/home/3d-printing.png 480w, 
+                                assets/images/home/3d-printing@2x.png 800w, 
+                                assets/images/home/3d-printing@3x.png 1200w"
+                                alt="3D printer printing a customized prosthetic for the arm.">
+                            <img class="image image__forward" src="assets/images/home/3d-printed-prosthesis.png" srcset="assets/images/home/3d-printed-prosthesis.png 480w, 
+                                assets/images/home/3d-printed-prosthesis@2x.png 800w, 
+                                assets/images/home/3d-printed-prosthesis@3x.png 1200w"
+                                alt="Person post-processing a 3D-printed prosthetic arm.">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vision -->
+        <section class="vision" aria-label="Vision">
+            <div class="grid-container display-flex flex-column flex-align-center padding-y-5 tablet:padding-y-8">
+                <h2 class="vision__heading margin-y-0 font-sans-lg tablet:font-sans-xl">Vision</h2>
+                <p class="vision__text font-sans-2xs tablet:font-sans-xs line-height-sans-5 text-center measure-6">
+                    The vision of the VHA Office of Advanced Manufacturing is to provide personalized,
+                    safe and equitable care for eligible Veterans by building advanced manufacturing
+                    capabilities across the enterprise.
+                </p>
+            </div>
+        </section>
+        <!-- Assistive Technology Catalog -->
+        <section class="assistive-tech-catalog bg-base-lightest" aria-label="Assistive Technology Catalog">
+            <div class="grid-container padding-y-5 tablet:padding-y-8 desktop:padding-y-10">
+                <div class="grid-row grid-gap desktop:padding-x-10">
+                    <div
+                        class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
+                        <div>
+                            <h2 class="margin-y-0 font-sans-md tablet:font-sans-xl">
+                                Assistive Technology Catalog
+                            </h2>
+                            <p class="font-sans-2xs tablet:font-sans-xs line-height-sans-5">
+                                VHA is partnering with the National Institutes of Health (NIH) to bring you the
+                                Assistive Technology (AT) Catalog, a collection of AT devices that are products of
+                                collaboration between patients, therapists, and engineers to match a patient’s needs and
+                                abilities with customized technology that helps them achieve their goals. This
+                                collection aims to share AT designs from the Central Virginia VA Health Care System and
+                                derivatives from users, along with stories and print information from VHA and the
+                                National Institutes of Health communities. The collection is scheduled to launch in
+                                early 2024. For more information or to request these files in the interim, please
+                                contact 
+                                <a class="usa-link" href="mailto:john.miller@va.gov">john.miller@va.gov</a>.
+                            </p>
+                            <button 
+                                class="usa-button font-sans-2xs width-auto margin-top-2 margin-bottom-4 padding-y-2"
+                                type="button">
+                                View Catalog
+                            </button>
+                        </div>
+                    </div>
+                    <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
+                        <img class="image assistive-tech-catalog__image"
+                            src="assets/images/home/assistive-tech-catalog.jpg" srcset="assets/images/home/assistive-tech-catalog.jpg 480w, 
+                            assets/images/home/assistive-tech-catalog@2x.jpg 800w, 
+                            assets/images/home/assistive-tech-catalog@3x.jpg 1200w"
+                            alt="Man on his computer using a software for 3D modeling.">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product Idea Submission Form -->
+        <section class="product-idea-form bg-primary-vivid" aria-label="Product Idea Form">
+            <div class="grid-container padding-y-5 tablet:padding-y-9 desktop:padding-y-10">
+                <div class="grid-row">
+                    <div class="grid-col-12 text-white">
+                        <h2 class="margin-y-0 font-sans-lg tablet:font-sans-xl">
+                            Product Idea Submission
+                        </h2>
+                        <p class="font-sans-2xs text-light line-height-sans-5">
+                            Ready to contribute to cutting-edge healthcare solutions for Veterans? Share your innovative
+                            product ideas with us by completing the Product Idea Form. Your insights could be the next
+                            breakthrough in patient care and supply chain resilience.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer class="usa-footer usa-footer--slim">
-        <div class="grid-container usa-footer__return-to-top">
-            <a href="#">Return to top</a>
+        <div class="grid-container usa-footer__return-to-top text-center">
+            <a class="font-sans-2xs" href="#">Return to top</a>
         </div>
         <div class="usa-footer__primary-section">
             <div class="usa-footer__primary-container grid-row">
-                <div class="mobile-lg:grid-col-8">
-                    <nav class="usa-footer__nav" aria-label="Footer navigation,">
-                        <ul class="grid-row grid-gap">
-                            <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Documentation</a>
+                <div class="desktop:grid-col-8">
+                    <nav class="usa-footer__nav border-bottom-0" aria-label="Footer navigation,">
+                        <ul class="grid-row grid-gap text-center">
+                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                                <a class="usa-footer__primary-link text-no-underline"
+                                    href="javascript:void(0);">Documentation</a>
                             </li>
-                            <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Features</a>
+                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                                <a class="usa-footer__primary-link text-no-underline"
+                                    href="javascript:void(0);">Features</a>
                             </li>
-                            <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Getting started</a>
+                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Getting
+                                    started</a>
                             </li>
-                            <li class="mobile-lg:grid-col-6 desktop:grid-col-auto usa-footer__primary-content">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">About us</a>
+                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">About
+                                    us</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
-                <div class="mobile-lg:grid-col-4">
+                <div class="desktop:grid-col-4">
                     <address class="usa-footer__address">
                         <div class="grid-row grid-gap">
-                            <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                            <div class="grid-col-6 desktop:grid-col-auto text-center">
                                 <div class="usa-footer__contact-info">
                                     <a class="text-no-underline" href="tel:1-800-555-5555">(800) CALL-GOVT</a>
                                 </div>
                             </div>
-                            <div class="grid-col-auto mobile-lg:grid-col-12 desktop:grid-col-auto">
+                            <div class="grid-col-6 desktop:grid-col-auto text-center">
                                 <div class="usa-footer__contact-info">
                                     <a href="mailto:info@agency.gov">info@agency.gov</a>
                                 </div>
