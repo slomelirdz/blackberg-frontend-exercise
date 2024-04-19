@@ -45,7 +45,7 @@ This project uses `uswds-compile` for copying USWDS static assets and transformi
 
 * Run `npx gulp watch` during development to watch changes in the `./sass` directory.
 
-* :exclamation: **This is an important note!** It's not recommended to run `npx gulp init` because it will update the `uswds.paths.dist.theme` and result in the loss of any custom changes.
+* :exclamation: **This is an important note:** It's not recommended to run `npx gulp init` because it will update the `uswds.paths.dist.theme` and result in the loss of any custom changes.
 
 
 ## Built With
