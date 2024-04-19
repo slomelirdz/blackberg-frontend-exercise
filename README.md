@@ -37,7 +37,7 @@ npm install
 npm start
 ```
 
-5. Once the development server is running, open your web browser and navigate to [http://localhost:3000/](http://localhost:3000/) (or the port specified by your environment variable) to view the application.
+5. Once the development server is running, open your web browser and navigate to `http://localhost:3000/` (or the port specified by your environment variable) to view the application.
 
 ## Development
 
