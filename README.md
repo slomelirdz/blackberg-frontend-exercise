@@ -1,5 +1,6 @@
 # blackberg-frontend-exercise
 
+This repository contains the front end development exercise for a landing page using the U.S. Web Design System (USWDS).
 View the live demo here: [Demo](https://blackberg-frontend-exercise-sandra-lomeli.vercel.app/)
 
 ## Getting Started
@@ -9,7 +10,9 @@ This guide will provide you with the necessary steps to run this project on your
 
 ## Prerequisites
 
-- [Node.js (v18.16.1 or higher) and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+Before proceeding with the installation, ensure you have the following prerequisites:
+
+- [Node.js (v18.16.1 or higher) and npm(v9.5.1 or higher)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 
 ## Installation
@@ -33,6 +36,8 @@ npm install
 ```bash
 npm start
 ```
+
+5. Once the development server is running, open your web browser and navigate to [http://localhost:3000/](http://localhost:3000/) (or the port specified by your environment variable) to view the application.
 
 ## Development
 
