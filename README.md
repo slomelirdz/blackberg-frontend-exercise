@@ -14,6 +14,11 @@ Before proceeding with the installation, ensure you have the following prerequis
 
 - [Node.js (v18.16.1 or higher) and npm(v9.5.1 or higher)](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
+Make sure you have installed it correctly:
+```shell
+npm -v
+9.5.1 # This line may vary depending on what version of Node you've installed.
+```
 
 ## Installation
 
