@@ -1,5 +1,7 @@
 # blackberg-frontend-exercise
 
+View the live demo here: [Demo](https://blackberg-frontend-exercise-sandra-lomeli.vercel.app/)
+
 ## Getting Started
 
 This guide will provide you with the necessary steps to run this project on your local machine.
