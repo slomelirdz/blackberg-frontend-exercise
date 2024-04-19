@@ -2,275 +2,332 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blackberg Frontend Developer Exercise</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blackberg Frontend Developer Exercise</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <!-- Banner -->
-    <section class="usa-banner" aria-label="Official website of the United States government">
-        <div class="usa-accordion">
-            <header class="usa-banner__header">
-                <div class="usa-banner__inner flex-align-stretch">
-                    <div class="grid-col-auto display-flex flex-rox flex-align-center">
-                        <img aria-hidden="true" class="usa-banner__header-flag"
-                            src="/assets/uswds/img/us_flag_small.png" alt="" />
-                    </div>
-                    <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
-                        <p class="usa-banner__header-text">
-                            An official website of the United States government
-                        </p>
-                        <p class="usa-banner__header-action">Here’s how you know</p>
-                    </div>
-                    <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false"
-                        aria-controls="gov-banner-default">
-                        <span class="usa-banner__button-text">Here’s how you know</span>
-                    </button>
-                </div>
-            </header>
-            <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
-                <div class="grid-row grid-gap-lg">
-                    <div class="usa-banner__guidance tablet:grid-col-6">
-                        <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-dot-gov.svg"
-                            role="img" alt="" aria-hidden="true" />
-                        <div class="usa-media-block__body">
-                            <p>
-                                <strong>Official websites use .gov</strong><br />A
-                                <strong>.gov</strong> website belongs to an official government
-                                organization in the United States.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="usa-banner__guidance tablet:grid-col-6">
-                        <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-https.svg"
-                            role="img" alt="" aria-hidden="true" />
-                        <div class="usa-media-block__body">
-                            <p>
-                                <strong>Secure .gov websites use HTTPS</strong><br />A
-                                <strong>lock</strong> (
-                                <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
-                                        viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
-                                        aria-labelledby="banner-lock-description-default" focusable="false">
-                                        <title id="banner-lock-title-default">Lock</title>
-                                        <desc id="banner-lock-description-default">Locked padlock icon</desc>
-                                        <path fill="#000000" fill-rule="evenodd"
-                                            d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
-                                    </svg> </span>) or <strong>https://</strong> means you’ve safely connected to
-                                the .gov website. Share sensitive information only on official,
-                                secure websites.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Banner -->
+  <section class="usa-banner" aria-label="Official website of the United States government">
+    <div class="usa-accordion">
+      <header class="usa-banner__header padding-y-1">
+        <div class="usa-banner__inner flex-align-stretch">
+          <div class="grid-col-auto display-flex flex-rox flex-align-center">
+            <img aria-hidden="true" class="usa-banner__header-flag" src="/assets/uswds/img/us_flag_small.png" alt="" />
+          </div>
+          <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+            <p class="usa-banner__header-text">
+              An official website of the United States government
+            </p>
+            <p class="usa-banner__header-action">Here’s how you know</p>
+          </div>
+          <button type="button" class="usa-accordion__button usa-banner__button" aria-expanded="false"
+            aria-controls="gov-banner-default">
+            <span class="usa-banner__button-text">Here’s how you know</span>
+          </button>
         </div>
-    </section>
-
-    <!-- Header -->
-    <div class="usa-overlay"></div>
-    <header class="usa-header usa-header--basic">
-        <div class="usa-nav-container">
-            <div class="usa-navbar">
-                <div class="usa-logo">
-                    <em class="usa-logo__text"><a href="/" title="Office of Advanced Manufacturing">Office of Advanced
-                            Manufacturing</a></em>
-                </div>
-                <button type="button" class="usa-menu-btn">Menu</button>
+      </header>
+      <div class="usa-banner__content usa-accordion__content" id="gov-banner-default">
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-dot-gov.svg" role="img"
+              alt="" aria-hidden="true" />
+            <div class="usa-media-block__body">
+              <p>
+                <strong>Official websites use .gov</strong><br />A
+                <strong>.gov</strong> website belongs to an official government
+                organization in the United States.
+              </p>
             </div>
-            <nav aria-label="Primary navigation" class="usa-nav">
-                <button type="button" class="usa-nav__close">
-                    <img src="/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
-                </button>
-                <ul class="usa-nav__primary usa-accordion">
-                    <li class="usa-nav__primary-item">
-                        <a href="javascript:void(0);" class="usa-nav-link usa-current"><span>Home</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a href="javascript:void(0);" class="usa-nav-link"><span>About</span></a>
-                    </li>
-                    <li class="usa-nav__primary-item">
-                        <a href="javascript:void(0);" class="usa-nav-link"><span>Contact Us</span></a>
-                    </li>
-                </ul>
-                <section aria-label="Search component">
-                    <form class="usa-search usa-search--small" role="search">
-                        <label class="usa-sr-only" for="search-field">Search</label>
-                        <input class="usa-input" id="search-field" type="search" name="search" />
-                        <button class="usa-button" type="submit">
-                            <img src="/assets/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon"
-                                alt="Search" />
-                        </button>
-                    </form>
-                </section>
-            </nav>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img class="usa-banner__icon usa-media-block__img" src="/assets/uswds/img/icon-https.svg" role="img" alt=""
+              aria-hidden="true" />
+            <div class="usa-media-block__body">
+              <p>
+                <strong>Secure .gov websites use HTTPS</strong><br />A
+                <strong>lock</strong> (
+                <span class="icon-lock"><svg xmlns="http://www.w3.org/2000/svg" width="52" height="64"
+                    viewBox="0 0 52 64" class="usa-banner__lock-image" role="img"
+                    aria-labelledby="banner-lock-description-default" focusable="false">
+                    <title id="banner-lock-title-default">Lock</title>
+                    <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                    <path fill="#000000" fill-rule="evenodd"
+                      d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z" />
+                  </svg> </span>) or <strong>https://</strong> means you’ve safely connected to
+                the .gov website. Share sensitive information only on official,
+                secure websites.
+              </p>
+            </div>
+          </div>
         </div>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-        <!-- Hero -->
-        <section class="hero" aria-label="Introduction">
-            <div class="hero__container grid-container">
-                <div class="hero__inner grid-row grid-gap padding-y-2 tablet:padding-y-6 desktop:padding-y-10">
-                    <div
-                        class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
-                        <div class="hero__text padding-bottom-3 tablet:padding-right-4 desktop:padding-x-4">
-                            <h1 class="hero__heading line-height-sans-3 tablet:line-height-sans-4">
-                                Transforming Healthcare through
-                                <span class="text-primary-vivid">Innovation</span> and
-                                <span class="text-primary-vivid">Advanced Manufacturing</span>
-                            </h1>
-                            <p class="hero__subheading line-height-sans-5 font-sans-md">
-                                The VHA Office of Advanced Manufacturing envisions a future where eligible
-                                Veterans receive personalized, safe, and equitable care through cutting-edge
-                                manufacturing capabilities.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
-                        <div class="hero__image padding-right-4">
-                            <img class="image image__backwards" src="assets/images/home/3d-printing.png" srcset="assets/images/home/3d-printing.png 480w, 
+  <!-- Header -->
+  <div class="usa-overlay"></div>
+  <header class="usa-header usa-header--basic">
+    <div class="usa-nav-container desktop:padding-x-8">
+      <div class="usa-navbar">
+        <div class="usa-logo">
+          <em class="usa-logo__text"><a href="/" title="Office of Advanced Manufacturing">Office of Advanced
+              Manufacturing</a></em>
+        </div>
+        <button type="button" class="usa-menu-btn">Menu</button>
+      </div>
+      <nav aria-label="Primary navigation" class="usa-nav">
+        <button type="button" class="usa-nav__close">
+          <img src="/assets/uswds/img/usa-icons/close.svg" role="img" alt="Close" />
+        </button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="javascript:void(0);" class="usa-nav-link usa-current"><span class="text-primary">Home</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="javascript:void(0);" class="usa-nav-link"><span>About</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="javascript:void(0);" class="usa-nav-link"><span>Contact Us</span></a>
+          </li>
+        </ul>
+        <section aria-label="Search component">
+          <form class="usa-search usa-search--small" role="search">
+            <label class="usa-sr-only" for="search-field">Search</label>
+            <input class="usa-input" id="search-field" type="search" name="search" />
+            <button class="usa-button" type="submit">
+              <img src="/assets/uswds/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon"
+                alt="Search" />
+            </button>
+          </form>
+        </section>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="desktop:border-top-0" id="main-content" role="main">
+    <!-- Hero -->
+    <section class="hero" aria-label="Introduction">
+      <div class="hero__container grid-container">
+        <div class="hero__inner grid-row grid-gap padding-y-2 tablet:padding-y-6 desktop:padding-y-10">
+          <div class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
+            <div class="hero__text padding-bottom-3 tablet:padding-right-15 desktop:padding-x-4">
+              <h1 class="hero__heading line-height-sans-3 tablet:line-height-sans-4">
+                Transforming Healthcare through
+                <span class="text-primary">Innovation</span> and
+                <span class="text-primary">Advanced Manufacturing</span>
+              </h1>
+              <p class="hero__subheading line-height-sans-5 font-sans-md">
+                The VHA Office of Advanced Manufacturing envisions a future where eligible
+                Veterans receive personalized, safe, and equitable care through cutting-edge
+                manufacturing capabilities.
+              </p>
+            </div>
+          </div>
+          <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
+            <div class="hero__image padding-right-4">
+              <img class="image image__backwards" src="assets/images/home/3d-printing.png" srcset="assets/images/home/3d-printing.png 480w, 
                                 assets/images/home/3d-printing@2x.png 800w, 
                                 assets/images/home/3d-printing@3x.png 1200w"
-                                alt="3D printer printing a customized prosthetic for the arm.">
-                            <img class="image image__forward" src="assets/images/home/3d-printed-prosthesis.png" srcset="assets/images/home/3d-printed-prosthesis.png 480w, 
+                alt="3D printer printing a customized prosthetic for the arm.">
+              <img class="image image__forward" src="assets/images/home/3d-printed-prosthesis.png" srcset="assets/images/home/3d-printed-prosthesis.png 480w, 
                                 assets/images/home/3d-printed-prosthesis@2x.png 800w, 
                                 assets/images/home/3d-printed-prosthesis@3x.png 1200w"
-                                alt="Person post-processing a 3D-printed prosthetic arm.">
-                        </div>
-                    </div>
-                </div>
+                alt="Person post-processing a 3D-printed prosthetic arm.">
             </div>
-        </section>
-        <!-- Vision -->
-        <section class="vision" aria-label="Vision">
-            <div class="grid-container display-flex flex-column flex-align-center padding-y-5 tablet:padding-y-8">
-                <h2 class="vision__heading margin-y-0 font-sans-lg tablet:font-sans-xl">Vision</h2>
-                <p class="vision__text font-sans-2xs tablet:font-sans-xs line-height-sans-5 text-center measure-6">
-                    The vision of the VHA Office of Advanced Manufacturing is to provide personalized,
-                    safe and equitable care for eligible Veterans by building advanced manufacturing
-                    capabilities across the enterprise.
-                </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Vision -->
+    <section class="vision" aria-label="Vision">
+      <div class="grid-container display-flex flex-column flex-align-center padding-y-5 tablet:padding-y-8">
+        <h2 class="vision__heading margin-y-0 font-sans-lg tablet:font-sans-xl">Vision</h2>
+        <p class="vision__text font-sans-2xs tablet:font-sans-xs line-height-sans-5 text-center measure-6">
+          The vision of the VHA Office of Advanced Manufacturing is to provide personalized,
+          safe and equitable care for eligible Veterans by building advanced manufacturing
+          capabilities across the enterprise.
+        </p>
+      </div>
+    </section>
+    <!-- Assistive Technology Catalog -->
+    <section class="assistive-tech-catalog bg-base-lightest" aria-label="Assistive Technology Catalog">
+      <div class="grid-container padding-y-5 tablet:padding-y-10">
+        <div class="grid-row grid-gap desktop:padding-x-10">
+          <div class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
+            <div>
+              <h2 class="margin-y-0 font-sans-lg tablet:font-sans-xl">
+                Assistive Technology Catalog
+              </h2>
+              <p class="font-sans-2xs tablet:font-sans-xs line-height-sans-5">
+                VHA is partnering with the National Institutes of Health (NIH) to bring you the
+                Assistive Technology (AT) Catalog, a collection of AT devices that are products of
+                collaboration between patients, therapists, and engineers to match a patient’s needs and
+                abilities with customized technology that helps them achieve their goals. This
+                collection aims to share AT designs from the Central Virginia VA Health Care System and
+                derivatives from users, along with stories and print information from VHA and the
+                National Institutes of Health communities. The collection is scheduled to launch in
+                early 2024. For more information or to request these files in the interim, please
+                contact
+                <a class="usa-link" href="mailto:john.miller@va.gov">john.miller@va.gov</a>.
+              </p>
+              <button class="usa-button font-sans-2xs text-ls-1 width-auto margin-top-2 margin-bottom-4 padding-y-2"
+                type="button">
+                View Catalog
+              </button>
             </div>
-        </section>
-        <!-- Assistive Technology Catalog -->
-        <section class="assistive-tech-catalog bg-base-lightest" aria-label="Assistive Technology Catalog">
-            <div class="grid-container padding-y-5 tablet:padding-y-8 desktop:padding-y-10">
-                <div class="grid-row grid-gap desktop:padding-x-10">
-                    <div
-                        class="grid-col-12 desktop:grid-col-6 desktop:order-last display-flex flex-row flex-align-center">
-                        <div>
-                            <h2 class="margin-y-0 font-sans-md tablet:font-sans-xl">
-                                Assistive Technology Catalog
-                            </h2>
-                            <p class="font-sans-2xs tablet:font-sans-xs line-height-sans-5">
-                                VHA is partnering with the National Institutes of Health (NIH) to bring you the
-                                Assistive Technology (AT) Catalog, a collection of AT devices that are products of
-                                collaboration between patients, therapists, and engineers to match a patient’s needs and
-                                abilities with customized technology that helps them achieve their goals. This
-                                collection aims to share AT designs from the Central Virginia VA Health Care System and
-                                derivatives from users, along with stories and print information from VHA and the
-                                National Institutes of Health communities. The collection is scheduled to launch in
-                                early 2024. For more information or to request these files in the interim, please
-                                contact 
-                                <a class="usa-link" href="mailto:john.miller@va.gov">john.miller@va.gov</a>.
-                            </p>
-                            <button 
-                                class="usa-button font-sans-2xs width-auto margin-top-2 margin-bottom-4 padding-y-2"
-                                type="button">
-                                View Catalog
-                            </button>
-                        </div>
-                    </div>
-                    <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
-                        <img class="image assistive-tech-catalog__image"
-                            src="assets/images/home/assistive-tech-catalog.jpg" srcset="assets/images/home/assistive-tech-catalog.jpg 480w, 
+          </div>
+          <div class="grid-col-12 desktop:grid-col-6 desktop:order-first">
+            <img class="image assistive-tech-catalog__image" src="assets/images/home/assistive-tech-catalog.jpg" srcset="assets/images/home/assistive-tech-catalog.jpg 480w, 
                             assets/images/home/assistive-tech-catalog@2x.jpg 800w, 
                             assets/images/home/assistive-tech-catalog@3x.jpg 1200w"
-                            alt="Man on his computer using a software for 3D modeling.">
-                    </div>
-                </div>
+              alt="Man on his computer using a software for 3D modeling.">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Idea Submission -->
+    <section class="product-idea-form bg-primary-vivid" aria-label="Product Idea Form">
+      <div class="grid-container padding-y-5 tablet:padding-y-9 desktop:padding-y-10">
+        <form class="usa-form maxw-full">
+          <div class="grid-row grid-gap">
+            <div class="grid-col-12 text-white">
+              <h2 class="margin-y-0 font-sans-lg tablet:font-sans-xl">
+                Product Idea Submission
+              </h2>
+              <p class="font-sans-2xs text-light line-height-sans-5">
+                Ready to contribute to cutting-edge healthcare solutions for Veterans? Share your innovative
+                product ideas with us by completing the Product Idea Form. Your insights could be the next
+                breakthrough in patient care and supply chain resilience.
+              </p>
             </div>
-        </section>
-        <!-- Product Idea Submission Form -->
-        <section class="product-idea-form bg-primary-vivid" aria-label="Product Idea Form">
-            <div class="grid-container padding-y-5 tablet:padding-y-9 desktop:padding-y-10">
-                <div class="grid-row">
-                    <div class="grid-col-12 text-white">
-                        <h2 class="margin-y-0 font-sans-lg tablet:font-sans-xl">
-                            Product Idea Submission
-                        </h2>
-                        <p class="font-sans-2xs text-light line-height-sans-5">
-                            Ready to contribute to cutting-edge healthcare solutions for Veterans? Share your innovative
-                            product ideas with us by completing the Product Idea Form. Your insights could be the next
-                            breakthrough in patient care and supply chain resilience.
-                        </p>
-                    </div>
-                </div>
+            <div class="grid-col-12 desktop:grid-col-4">
+              <!-- Full Name -->
+              <label class="usa-label text-white font-sans-2xs" for="input-full-name">
+                Full Name <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+              </label>
+              <input 
+                class="usa-input border-black" 
+                id="input-full-name" 
+                name="input-full-name" 
+                required />
+              <!-- Phone Number -->
+              <label class="usa-label text-white font-sans-2xs" for="input-phone-number">
+                Phone Number
+              </label>
+              <input 
+                class="usa-input border-black" 
+                id="input-phone-number" 
+                type="tel" 
+                inputmode="numeric"
+                name="input-phone-number" 
+                placeholder="___-___-____" 
+                pattern="\d{3}-\d{3}-\d{4}"
+                class="usa-input usa-masked" />
+              <!-- Email Address -->
+              <label class="usa-label text-white font-sans-2xs" for="input-email">
+                Email Address <abbr title="required" class="usa-hint usa-hint--required">*</abbr>
+              </label>
+              <input 
+                class="usa-input border-black" 
+                id="input-email" 
+                name="input-email" 
+                type="email"
+                autocapitalize="off" 
+                autocorrect="off" 
+                required />
             </div>
-        </section>
-    </main>
+            <div class="grid-col-12 desktop:grid-col-4 desktop:display-flex desktop:flex-column">
+              <!-- Product Idea -->
+              <label class="usa-label text-white font-sans-2xs" for="input-product-idea">
+                Product Idea
+              </label>
+              <textarea 
+                class="usa-textarea border-black desktop:flex-1 product-idea-form__textarea"
+                id="input-product-idea" 
+                name="input-product-idea"></textarea>
+            </div>
+            <div class="grid-col-12 desktop:grid-col-4 desktop:display-flex desktop:flex-column">
+              <!-- Intent of Use -->
+              <label class="usa-label text-white font-sans-2xs" for="input-intent-of-use">
+                Intent of Use
+              </label>
+              <textarea 
+                class="usa-textarea border-black desktop:flex-1 product-idea-form__textarea"
+                id="input-intent-of-use" 
+                name="iinput-intent-of-use"></textarea>
+            </div>
+            <div class="grid-col-12 padding-y-2">
+              <!-- Submit Button -->
+              <input
+                class="usa-button usa-button--outline usa-button--inverse font-sans-2xs text-ls-1 width-auto padding-y-2"
+                type="submit" value="Send Product Idea" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="usa-footer usa-footer--slim">
-        <div class="grid-container usa-footer__return-to-top text-center">
-            <a class="font-sans-2xs" href="#">Return to top</a>
+  <!-- Footer -->
+  <footer class="usa-footer usa-footer--slim">
+    <div class="grid-container usa-footer__return-to-top text-center desktop:text-left">
+      <a class="font-sans-xs text-primary" href="#">Return to top</a>
+    </div>
+    <div class="usa-footer__primary-section">
+      <div class="usa-footer__primary-container grid-row">
+        <div class="desktop:grid-col-8">
+          <nav class="usa-footer__nav border-bottom-0" aria-label="Footer navigation,">
+            <ul class="grid-row grid-gap text-center desktop:padding-x-2">
+              <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Documentation</a>
+              </li>
+              <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Features</a>
+              </li>
+              <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Getting
+                  started</a>
+              </li>
+              <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
+                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">About
+                  us</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="usa-footer__primary-section">
-            <div class="usa-footer__primary-container grid-row">
-                <div class="desktop:grid-col-8">
-                    <nav class="usa-footer__nav border-bottom-0" aria-label="Footer navigation,">
-                        <ul class="grid-row grid-gap text-center">
-                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
-                                <a class="usa-footer__primary-link text-no-underline"
-                                    href="javascript:void(0);">Documentation</a>
-                            </li>
-                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
-                                <a class="usa-footer__primary-link text-no-underline"
-                                    href="javascript:void(0);">Features</a>
-                            </li>
-                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">Getting
-                                    started</a>
-                            </li>
-                            <li class="tablet:grid-col-3 desktop:grid-col-auto usa-footer__primary-content border-top-0">
-                                <a class="usa-footer__primary-link text-no-underline" href="javascript:void(0);">About
-                                    us</a>
-                            </li>
-                        </ul>
-                    </nav>
+        <div class="desktop:grid-col-4">
+          <address class="usa-footer__address">
+            <div class="grid-row grid-gap desktop:">
+              <div class="grid-col-6 desktop:grid-col-fill text-center tablet:text-right">
+                <div class="usa-footer__contact-info">
+                  <a class="text-no-underline" href="tel:1-800-555-5555">(800) CALL-GOVT</a>
                 </div>
-                <div class="desktop:grid-col-4">
-                    <address class="usa-footer__address">
-                        <div class="grid-row grid-gap">
-                            <div class="grid-col-6 desktop:grid-col-auto text-center">
-                                <div class="usa-footer__contact-info">
-                                    <a class="text-no-underline" href="tel:1-800-555-5555">(800) CALL-GOVT</a>
-                                </div>
-                            </div>
-                            <div class="grid-col-6 desktop:grid-col-auto text-center">
-                                <div class="usa-footer__contact-info">
-                                    <a href="mailto:info@agency.gov">info@agency.gov</a>
-                                </div>
-                            </div>
-                        </div>
-                    </address>
+              </div>
+              <div class="grid-col-6 desktop:grid-col-auto text-center tablet:text-left">
+                <div class="usa-footer__contact-info">
+                  <a class="text-primary" href="mailto:info@agency.gov">info@agency.gov</a>
                 </div>
+              </div>
             </div>
+          </address>
         </div>
-        <div class="usa-footer__secondary-section">
-            <div class="grid-container">
-                <div class="usa-footer__logo grid-row">
-                    <div class="grid-col-auto">
-                        <p class="usa-footer__logo-heading">Office of Advanced Manufacturing</p>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="usa-footer__logo grid-row">
+          <div class="grid-col-auto">
+            <p class="usa-footer__logo-heading">Office of Advanced Manufacturing</p>
+          </div>
         </div>
-    </footer>
-    <script src="assets/uswds/js/uswds.js"></script>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/uswds/js/uswds.js"></script>
 </body>
 
 </html>

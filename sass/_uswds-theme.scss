@@ -13,6 +13,16 @@ in the form $setting: value,
     $theme-image-path: '../uswds/img',
     $theme-show-compile-warnings: true,
     $theme-show-notifications: false,
+    $utilities-use-important: true,
+    $flex-settings: (
+        responsive: true,
+    ),
+    $flex-direction-settings: (
+        responsive: true,
+    ),
+    $text-align-settings: (
+        responsive: true,
+    ),
 
     // Spacing
     $theme-grid-container-max-width: 'widescreen',
