@@ -48,7 +48,7 @@ This project uses `uswds-compile` for copying USWDS static assets and transformi
 
 ## Author
 
-* **Sandra Lomeli** - *Initial work* - [www.sandralomeli.com](https://www.sandralomeli.com)
+* **Sandra Lomeli** - [www.sandralomeli.com](https://www.sandralomeli.com)
 
 
 
