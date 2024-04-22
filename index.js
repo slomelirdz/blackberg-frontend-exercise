@@ -19,8 +19,10 @@ const server = http.createServer((req, res) => {
     '.svg': 'image/svg+xml',
   };
 
+  // Set the content type based on the file extension
   const contentType = mimeTypes[extname] || 'application/octet-stream';
 
+  // Read the file to serve
   fs.readFile(filePath, (err, content) => {
     if (err) {
       res.writeHead(500);
@@ -32,6 +34,7 @@ const server = http.createServer((req, res) => {
   });
 });
 
+// Start the server
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
   console.log(`Server running on http://localhost:${port}/`);
